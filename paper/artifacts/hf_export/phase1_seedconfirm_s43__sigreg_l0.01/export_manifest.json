@@ -1,0 +1,12 @@
+{
+  "source_checkpoint": "outputs/phase1_seedconfirm_s43/checkpoints/arm1/sigreg_l0.01/checkpoint_step610352.pt",
+  "global_step": 610352,
+  "trainer_seed": 43,
+  "loss_terms": [
+    "l_aux",
+    "l_sigreg"
+  ],
+  "tokenizer": "mistralai/Mistral-7B-v0.1",
+  "tie_word_embeddings": true,
+  "logits_max_abs_err": 0.0
+}

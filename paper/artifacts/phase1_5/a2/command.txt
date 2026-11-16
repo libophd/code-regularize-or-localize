@@ -1,0 +1,1 @@
+scripts/phase1_5_bridge_probe.py --probe a2 --checkpoint outputs/phase1_exitgate/checkpoints/arm2/sigreg_l0.01/checkpoint_step610352.pt --train-tokens 500000000 --eval-tokens 2000000 --eval-docs 5000 --eval-offset-docs 100000 --batch-size 8 --seq-len 2048 --device cuda --amp-dtype fp32 --out-dir outputs/phase1_5/a2

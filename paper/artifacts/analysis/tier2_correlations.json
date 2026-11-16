@@ -1,0 +1,387 @@
+{
+  "schema_version": "tier2-correlations-v1",
+  "note": "Descriptive Spearman rank correlations over 12 layers, within arm x scheme x tensor; correlated statistics \u2014 cannot establish mediation. Geometry values from the uniform protocol only.",
+  "inputs_sha256": {
+    "outputs/revision/geometry_uniform/results_s42.json": "16c366138807da74f53c395e0d8365c8c3fd3ad34d372b2c956d84a423b05dc8",
+    "outputs/revision/kv_quant/layerwise/results_s42_l_aux.json": "d83667e81056769186acb5e7971bd2e5194f52317c6ec088a633ea7e8ccd8cf3",
+    "outputs/revision/kv_quant/recon/results_s42_l_aux.json": "1d48a4c9d0b52dbc5d51d0f41d7772902482b77ffd542c1f8f72e72da4c76971",
+    "outputs/revision/kv_quant/layerwise/results_s42_l_aux+l_sigreg.json": "bd6a735f794965cf8679dccd461185db441e3f3e155aeb021b8084bdb4028cf4",
+    "outputs/revision/kv_quant/recon/results_s42_l_aux+l_sigreg.json": "867f72f6c6a63cc3a654f42f10e60c6154f2d566494e9619f10ef8400eef7aec",
+    "outputs/revision/kv_quant/layerwise/results_s42_a1_adapted.json": "5f964945e03572a7c1d6fdacf3273a4392077b8aac15ad5aa5ae25dc5b47e852",
+    "outputs/revision/kv_quant/recon/results_s42_a1_adapted.json": "549763fcbe766999f74d08aeae6a725257bdb21f87e4fb4441b8f6b63d930ac4",
+    "outputs/revision/kv_quant/layerwise/results_s42_ce_continue.json": "59116c8158ed33cd6f61d9a721b5d797360e3ae75c2f143050c84c71b8ce8574",
+    "outputs/revision/kv_quant/recon/results_s42_ce_continue.json": "e34543b383b928f6d65efccafb047f798ebbe4d8e29616fb88af53509c68e3cb",
+    "outputs/revision/kv_quant/layerwise/results_s42_ce_only.json": "95ff2c472325fe7b33da4391e20aa3979ebdb318a11cfa9cb7022fe787d299fd",
+    "outputs/revision/kv_quant/recon/results_s42_ce_only.json": "097c69a0b35fb45b4279f925fb55e8c750fede196bb23724d8b9a30a67743245",
+    "outputs/revision/kv_quant/layerwise/results_s42_h_k_only.json": "81c8bf657039bb0432947d8e352754e4d2afb2a7f329d95c30ace0918e7c2b46",
+    "outputs/revision/kv_quant/recon/results_s42_h_k_only.json": "d4d579f27173569cfa9f4856f1d129efa3f94e039e73c37db984706e8859ed67",
+    "outputs/revision/kv_quant/layerwise/results_s42_h_v_only.json": "82fc481473833925016f6febcfc77496582100cd3300094fe0cfcf5fe7527430",
+    "outputs/revision/kv_quant/recon/results_s42_h_v_only.json": "bde6b6e2632b311b718dde28a4978c9139ce7b10724fc8130a5b9e442c002717"
+  },
+  "results": [
+    {
+      "arm": "l_aux",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.18181818181818182,
+        "aniso_paircos": 0.11888111888111888,
+        "top1_share": -0.38461538461538464,
+        "scale_dispersion": -0.16783216783216784,
+        "kurtosis_max": 0.8461538461538461
+      }
+    },
+    {
+      "arm": "l_aux",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.8671328671328671,
+        "aniso_paircos": -0.11188811188811189,
+        "top1_share": 0.4125874125874126,
+        "scale_dispersion": 0.5314685314685315,
+        "kurtosis_max": 0.5034965034965035
+      }
+    },
+    {
+      "arm": "l_aux",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.3986013986013986,
+        "aniso_paircos": -0.17482517482517482,
+        "top1_share": -0.7202797202797203,
+        "scale_dispersion": -0.13286713286713286,
+        "kurtosis_max": 0.6153846153846154
+      }
+    },
+    {
+      "arm": "l_aux",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.13286713286713286,
+        "aniso_paircos": 0.16783216783216784,
+        "top1_share": -0.27972027972027974,
+        "scale_dispersion": -0.22377622377622378,
+        "kurtosis_max": -0.36363636363636365
+      }
+    },
+    {
+      "arm": "l_aux+l_sigreg",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.43356643356643354,
+        "aniso_paircos": 0.07692307692307693,
+        "top1_share": -0.4965034965034965,
+        "scale_dispersion": -0.3076923076923077,
+        "kurtosis_max": 0.5174825174825175
+      }
+    },
+    {
+      "arm": "l_aux+l_sigreg",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.7762237762237763,
+        "aniso_paircos": 0.17482517482517482,
+        "top1_share": 0.09090909090909091,
+        "scale_dispersion": 0.15384615384615385,
+        "kurtosis_max": 0.2517482517482518
+      }
+    },
+    {
+      "arm": "l_aux+l_sigreg",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.1958041958041958,
+        "aniso_paircos": -0.06293706293706294,
+        "top1_share": -0.6853146853146853,
+        "scale_dispersion": -0.15384615384615385,
+        "kurtosis_max": 0.4755244755244755
+      }
+    },
+    {
+      "arm": "l_aux+l_sigreg",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.027972027972027972,
+        "aniso_paircos": 0.13286713286713286,
+        "top1_share": -0.22377622377622378,
+        "scale_dispersion": -0.34965034965034963,
+        "kurtosis_max": -0.4825174825174825
+      }
+    },
+    {
+      "arm": "a1_adapted",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.8881118881118881,
+        "aniso_paircos": 0.958041958041958,
+        "top1_share": -0.21678321678321677,
+        "scale_dispersion": 0.3776223776223776,
+        "kurtosis_max": 0.6153846153846154
+      }
+    },
+    {
+      "arm": "a1_adapted",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": -0.06293706293706294,
+        "aniso_paircos": 0.13986013986013987,
+        "top1_share": 0.06993006993006994,
+        "scale_dispersion": 0.5804195804195804,
+        "kurtosis_max": 0.0979020979020979
+      }
+    },
+    {
+      "arm": "a1_adapted",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.07692307692307693,
+        "aniso_paircos": 0.3776223776223776,
+        "top1_share": -0.09090909090909091,
+        "scale_dispersion": 0.006993006993006993,
+        "kurtosis_max": 0.2867132867132867
+      }
+    },
+    {
+      "arm": "a1_adapted",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": -0.006993006993006993,
+        "aniso_paircos": -0.2097902097902098,
+        "top1_share": -0.5314685314685315,
+        "scale_dispersion": -0.006993006993006993,
+        "kurtosis_max": -0.23776223776223776
+      }
+    },
+    {
+      "arm": "ce_continue",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.32167832167832167,
+        "aniso_paircos": -0.006993006993006993,
+        "top1_share": -0.5804195804195804,
+        "scale_dispersion": -0.2867132867132867,
+        "kurtosis_max": 0.5034965034965035
+      }
+    },
+    {
+      "arm": "ce_continue",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.8251748251748252,
+        "aniso_paircos": 0.013986013986013986,
+        "top1_share": 0.21678321678321677,
+        "scale_dispersion": 0.35664335664335667,
+        "kurtosis_max": 0.3986013986013986
+      }
+    },
+    {
+      "arm": "ce_continue",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.3706293706293706,
+        "aniso_paircos": -0.13986013986013987,
+        "top1_share": -0.7692307692307693,
+        "scale_dispersion": -0.32867132867132864,
+        "kurtosis_max": 0.3706293706293706
+      }
+    },
+    {
+      "arm": "ce_continue",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.04895104895104895,
+        "aniso_paircos": 0.04895104895104895,
+        "top1_share": -0.23076923076923078,
+        "scale_dispersion": -0.4405594405594406,
+        "kurtosis_max": -0.43356643356643354
+      }
+    },
+    {
+      "arm": "ce_only",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.34965034965034963,
+        "aniso_paircos": -0.013986013986013986,
+        "top1_share": -0.5944055944055944,
+        "scale_dispersion": -0.25874125874125875,
+        "kurtosis_max": 0.5804195804195804
+      }
+    },
+    {
+      "arm": "ce_only",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.8811188811188811,
+        "aniso_paircos": -0.006993006993006993,
+        "top1_share": 0.3076923076923077,
+        "scale_dispersion": 0.34965034965034963,
+        "kurtosis_max": 0.32867132867132864
+      }
+    },
+    {
+      "arm": "ce_only",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.3706293706293706,
+        "aniso_paircos": -0.1258741258741259,
+        "top1_share": -0.7762237762237763,
+        "scale_dispersion": -0.3146853146853147,
+        "kurtosis_max": 0.43356643356643354
+      }
+    },
+    {
+      "arm": "ce_only",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.006993006993006993,
+        "aniso_paircos": 0.027972027972027972,
+        "top1_share": -0.1888111888111888,
+        "scale_dispersion": -0.32867132867132864,
+        "kurtosis_max": -0.3916083916083916
+      }
+    },
+    {
+      "arm": "h_k_only",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.9090909090909091,
+        "aniso_paircos": 0.965034965034965,
+        "top1_share": -0.4405594405594406,
+        "scale_dispersion": 0.45454545454545453,
+        "kurtosis_max": 0.4755244755244755
+      }
+    },
+    {
+      "arm": "h_k_only",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.8811188811188811,
+        "aniso_paircos": 0.3006993006993007,
+        "top1_share": 0.3706293706293706,
+        "scale_dispersion": 0.32867132867132864,
+        "kurtosis_max": 0.32167832167832167
+      }
+    },
+    {
+      "arm": "h_k_only",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.26573426573426573,
+        "aniso_paircos": 0.3146853146853147,
+        "top1_share": -0.2517482517482518,
+        "scale_dispersion": -0.04195804195804196,
+        "kurtosis_max": 0.32867132867132864
+      }
+    },
+    {
+      "arm": "h_k_only",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": -0.04895104895104895,
+        "aniso_paircos": -0.25874125874125875,
+        "top1_share": -0.04195804195804196,
+        "scale_dispersion": -0.16783216783216784,
+        "kurtosis_max": 0.03496503496503497
+      }
+    },
+    {
+      "arm": "h_v_only",
+      "scheme": "per_token",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.4125874125874126,
+        "aniso_paircos": 0.055944055944055944,
+        "top1_share": -0.5524475524475524,
+        "scale_dispersion": -0.3916083916083916,
+        "kurtosis_max": 0.34265734265734266
+      }
+    },
+    {
+      "arm": "h_v_only",
+      "scheme": "per_token",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": -0.2097902097902098,
+        "aniso_paircos": 0.06993006993006994,
+        "top1_share": 0.0979020979020979,
+        "scale_dispersion": 0.5454545454545454,
+        "kurtosis_max": -0.13986013986013987
+      }
+    },
+    {
+      "arm": "h_v_only",
+      "scheme": "per_channel",
+      "tensor": "k",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": 0.18181818181818182,
+        "aniso_paircos": -0.03496503496503497,
+        "top1_share": -0.7132867132867133,
+        "scale_dispersion": -0.2727272727272727,
+        "kurtosis_max": 0.46153846153846156
+      }
+    },
+    {
+      "arm": "h_v_only",
+      "scheme": "per_channel",
+      "tensor": "v",
+      "n_layers": 12,
+      "spearman": {
+        "recon_rel_frobenius": -0.055944055944055944,
+        "aniso_paircos": 0.0979020979020979,
+        "top1_share": -0.5104895104895105,
+        "scale_dispersion": -0.02097902097902098,
+        "kurtosis_max": -0.027972027972027972
+      }
+    }
+  ]
+}

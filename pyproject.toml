@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-regularize-or-localize"
+version = "0.1.0"
+description = "Training-time KV-cache geometry and post-hoc quantization experiments"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+authors = [{ name = "Libo Sun" }]
+dependencies = [
+    "torch>=2.3",
+    "transformers>=4.45,<6",
+    "datasets>=2.18,<6",
+    "einops>=0.8",
+    "hydra-core>=1.3",
+    "numpy>=1.26,<3",
+]
+
+[project.urls]
+Repository = "https://github.com/libophd/code-regularize-or-localize"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+figures = ["matplotlib>=3.9,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jepa_lm = ["configs/**/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/**" = ["E402"]
+"scripts/kv_quant_eval.py" = ["E402", "F401"]
+"scripts/phase1_5_gate.py" = ["E402", "F841"]
+"scripts/revision/tier2_common.py" = ["E402", "F401"]
+

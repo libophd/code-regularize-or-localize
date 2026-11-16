@@ -1,0 +1,30 @@
+{
+  "elapsed_seconds": 120250.57482004166,
+  "results": [
+    {
+      "label": "baseline",
+      "sigreg_weight": null,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 21.49398446618494,
+        "mean_nll": 3.0677731037139893,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.025035761296749115,
+        "spectrum_top1_share": 0.06485412269830704,
+        "spectrum_max": 1981.4832763671875,
+        "spectrum_min": 59.56306838989258,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 3.209423780441284,
+        "components": {
+          "l_aux": 3.209423780441284
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 2.1147217750549316
+      }
+    }
+  ]
+}

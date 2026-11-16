@@ -1,0 +1,47 @@
+[
+  {
+    "model": "phase1_seedconfirm_s42__baseline",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.558661844116646,
+    "sts_spearman_whitened": 0.6974457885240122,
+    "anisotropy_pooled": 0.30755001306533813,
+    "anisotropy_pooled_whitened": -0.0010665663285180926
+  },
+  {
+    "model": "phase1_seedconfirm_s42__sigreg_l0.01",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.5943674777949983,
+    "sts_spearman_whitened": 0.6911229211768304,
+    "anisotropy_pooled": 0.24661847949028015,
+    "anisotropy_pooled_whitened": 0.0001665923628024757
+  },
+  {
+    "model": "phase1_seedconfirm_s43__baseline",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.5421710267009934,
+    "sts_spearman_whitened": 0.6968520176521389,
+    "anisotropy_pooled": 0.3497108519077301,
+    "anisotropy_pooled_whitened": -0.0009398883557878435
+  },
+  {
+    "model": "phase1_seedconfirm_s44__baseline",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.5381025572933784,
+    "sts_spearman_whitened": 0.6881078983581492,
+    "anisotropy_pooled": 0.32332155108451843,
+    "anisotropy_pooled_whitened": 0.0008081168052740395
+  },
+  {
+    "model": "phase1_seedconfirm_s44__sigreg_l0.01",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.5644541688952769,
+    "sts_spearman_whitened": 0.6947055998026742,
+    "anisotropy_pooled": 0.2610858082771301,
+    "anisotropy_pooled_whitened": 0.00023999302356969565
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "model": "phase1_seedconfirm_s43__sigreg_l0.01",
+    "n_pairs": 1500,
+    "top_d": 7,
+    "sts_spearman": 0.5773766506096044,
+    "sts_spearman_whitened": 0.696714547806502,
+    "anisotropy_pooled": 0.2819395661354065,
+    "anisotropy_pooled_whitened": -0.00032019594800658524
+  }
+]

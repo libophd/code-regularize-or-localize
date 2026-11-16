@@ -1,0 +1,42 @@
+{
+  "probe": "a1",
+  "checkpoint": "outputs/phase1_seedconfirm_s42/checkpoints/arm1/sigreg_l0.01/checkpoint_step610352.pt",
+  "trunk": {
+    "d_model": 768,
+    "vocab_size": 32000,
+    "global_step": 610352
+  },
+  "schedule": {
+    "n_steps": 30518,
+    "n_eval_batches": 123,
+    "tokens_per_step": 16384,
+    "batch_size": 8,
+    "seq_len": 2048,
+    "train_tokens": 500000000
+  },
+  "probe_cfg": {
+    "lr": 0.0001,
+    "m_projections": 256,
+    "lambda_kv": 0.01,
+    "unfreeze": "trunk",
+    "trunk_policy": "trunk",
+    "a2_bridge": null,
+    "a2_mlp_hidden_multiplier": null,
+    "amp_dtype": "bf16",
+    "seed": 42
+  },
+  "dataset": {
+    "name": "HuggingFaceFW/fineweb",
+    "config": "sample-10BT",
+    "eval_docs": 5000,
+    "eval_offset_docs": 100000
+  },
+  "tokenizer": {
+    "name": "mistralai/Mistral-7B-v0.1",
+    "vocab_size": 32000
+  },
+  "git": {
+    "sha": "<redacted-commit-for-double-blind-review>",
+    "dirty": true
+  }
+}

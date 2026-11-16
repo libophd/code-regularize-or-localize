@@ -1,0 +1,141 @@
+{
+  "elapsed_seconds": 715502.717155695,
+  "results": [
+    {
+      "label": "baseline",
+      "sigreg_weight": null,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 21.893676549322524,
+        "mean_nll": 3.086197853088379,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.024203242734074593,
+        "spectrum_top1_share": 0.0617879182100296,
+        "spectrum_max": 1896.9473876953125,
+        "spectrum_min": 61.97345733642578,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 2.8961875438690186,
+        "components": {
+          "l_aux": 2.8961875438690186
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 1.9196381568908691
+      }
+    },
+    {
+      "label": "sigreg_l0.001",
+      "sigreg_weight": 0.001,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 21.893029296342714,
+        "mean_nll": 3.0861682891845703,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.025527790188789368,
+        "spectrum_top1_share": 0.06578004360198975,
+        "spectrum_max": 1918.4869384765625,
+        "spectrum_min": 57.72733688354492,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 2.898127794265747,
+        "components": {
+          "l_aux": 2.890254259109497,
+          "l_sigreg": 7.875
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 1.9692827463150024
+      }
+    },
+    {
+      "label": "sigreg_l0.01",
+      "sigreg_weight": 0.01,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 21.934413644300726,
+        "mean_nll": 3.088056802749634,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.01832052879035473,
+        "spectrum_top1_share": 0.055627577006816864,
+        "spectrum_max": 1392.7606201171875,
+        "spectrum_min": 57.218719482421875,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 2.9438884258270264,
+        "components": {
+          "l_aux": 2.8889567852020264,
+          "l_sigreg": 5.5
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 1.842240571975708
+      }
+    },
+    {
+      "label": "sigreg_l0.1",
+      "sigreg_weight": 0.1,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 23.658185468616985,
+        "mean_nll": 3.1637091636657715,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.010701024904847145,
+        "spectrum_top1_share": 0.033844757825136185,
+        "spectrum_max": 464.5348205566406,
+        "spectrum_min": 26.38763427734375,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 3.116248846054077,
+        "components": {
+          "l_aux": 2.969764471054077,
+          "l_sigreg": 1.4609375
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 2.1084794998168945
+      }
+    },
+    {
+      "label": "sigreg_l1.0",
+      "sigreg_weight": 1.0,
+      "n_steps_trained": 610352,
+      "eval_metrics": {
+        "perplexity": 22.86568876527092,
+        "mean_nll": 3.1296374797821045,
+        "n_tokens": 2014248,
+        "anisotropy_h": 0.0015776925720274448,
+        "spectrum_top1_share": 0.031049132347106934,
+        "spectrum_max": 293.3957214355469,
+        "spectrum_min": 8.978501319885254,
+        "n_h_collected": 4096
+      },
+      "last_train_step_metrics": {
+        "step": 610352,
+        "loss": 3.951167106628418,
+        "components": {
+          "l_aux": 2.935542106628418,
+          "l_sigreg": 1.015625
+        },
+        "lr": 3.0000000001800088e-05,
+        "lr_next": 2.9999999999999997e-05,
+        "grad_norm": 1.4442088603973389
+      }
+    }
+  ],
+  "consolidated_from": [
+    "outputs/phase1_exitgate/arm0/sweep_metrics.json",
+    "outputs/phase1_exitgate/arm1/sweep_metrics.json",
+    "outputs/phase1_exitgate/arm2/sweep_metrics.json",
+    "outputs/phase1_exitgate/arm3/sweep_metrics.json",
+    "outputs/phase1_exitgate/arm4/sweep_metrics.json"
+  ]
+}

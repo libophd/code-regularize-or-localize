@@ -1,0 +1,117 @@
+{
+  "probe": "lora_kv",
+  "dev_mode": false,
+  "arm": "lora_kv",
+  "base_objective": "checkpoint",
+  "checkpoint": "outputs/phase1_seedconfirm_s42/checkpoints/arm1/sigreg_l0.01/checkpoint_step610352.pt",
+  "source_seed": 42,
+  "continuation_seed": 42,
+  "eval_seed": null,
+  "aniso_seed": 1234,
+  "log_file": "<repo>/outputs/revision/logs/lora_kv_s42_20260904-121254_p170523.log",
+  "tokenizer_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+  "dataset_revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+  "source_checkpoint_sha256": "fea6477ceebfe6508df2fb7f0973acf1a747d08b2fc3a749f29a863b5c7a8363",
+  "rng_policy": "checkpoint_restored, then advanced by the baseline evaluation, then training (manual_seed(continuation_seed) pre-load is overwritten by load_checkpoint's RNG restore \u2014 matches every historical A1/continuation run; exactly one visible GPU)",
+  "trunk": {
+    "d_model": 768,
+    "vocab_size": 32000,
+    "global_step": 610352,
+    "n_params": 109529856
+  },
+  "schedule": {
+    "n_steps": 30518,
+    "n_eval_batches": 123,
+    "tokens_per_step": 16384,
+    "batch_size": 8,
+    "seq_len": 2048,
+    "train_tokens": 500000000
+  },
+  "probe_cfg": {
+    "lr": 0.0001,
+    "m_projections": 256,
+    "lambda_kv": 0.01,
+    "bridge_targets": "k+v",
+    "unfreeze": "lora",
+    "trunk_policy": "frozen_base_lora_adapters",
+    "lora": {
+      "rank": 16,
+      "alpha": 32.0,
+      "dropout": 0.0,
+      "targets": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ],
+      "scaling": 2.0
+    },
+    "n_lora_params_expected": 1179648,
+    "amp_dtype": "bf16",
+    "device": "cuda"
+  },
+  "dataset": {
+    "name": "HuggingFaceFW/fineweb",
+    "config": "sample-10BT",
+    "eval_docs": 5000,
+    "eval_offset_docs": 100000
+  },
+  "tokenizer": {
+    "name": "mistralai/Mistral-7B-v0.1",
+    "vocab_size": 32000
+  },
+  "code": {
+    "sha": "<redacted-commit-for-double-blind-review>",
+    "code_dirty": false,
+    "tree_dirty": false,
+    "code_paths": [
+      "src",
+      "scripts/revision/run_lora_probe.py",
+      "scripts/kv_quant_eval.py"
+    ]
+  },
+  "recipe": {
+    "lr": 0.0001,
+    "lambda_kv": 0.01,
+    "m_projections": 256,
+    "amp_dtype": "bf16",
+    "unfreeze": "lora",
+    "batch_size": 8,
+    "seq_len": 2048,
+    "train_tokens": 500000000,
+    "eval_tokens": 2000000,
+    "eval_docs": 5000,
+    "eval_offset_docs": 100000,
+    "dataset_name": "HuggingFaceFW/fineweb",
+    "dataset_config": "sample-10BT",
+    "dataset_split": "train",
+    "tokenizer_name": "mistralai/Mistral-7B-v0.1",
+    "vocab_size": 32000,
+    "aniso_seed": 1234,
+    "continuation_seed": 42,
+    "source_seed": 42,
+    "lora": {
+      "rank": 16,
+      "alpha": 32.0,
+      "dropout": 0.0,
+      "targets": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ],
+      "scaling": 2.0
+    },
+    "dev_mode": false,
+    "device_type": "cuda",
+    "rng_policy": "checkpoint_restored",
+    "tokenizer_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "dataset_revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+    "train_freeze_sha256": "eebf2290140b148aa738f19065d21c63470f3aea4fabed12b30959432daecae2",
+    "source_checkpoint": "outputs/phase1_seedconfirm_s42/checkpoints/arm1/sigreg_l0.01/checkpoint_step610352.pt",
+    "source_checkpoint_sha256": "fea6477ceebfe6508df2fb7f0973acf1a747d08b2fc3a749f29a863b5c7a8363",
+    "git_sha": "<redacted-commit-for-double-blind-review>",
+    "code_dirty": false,
+    "tree_dirty": false
+  }
+}

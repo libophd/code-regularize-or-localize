@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or evidence, please cite the accompanying paper."
+type: software
+title: "Regularize or Localize: When Training-Time KV-Cache Geometry Pays Under Quantization"
+authors:
+  - family-names: Sun
+    given-names: Libo
+  - family-names: Harn
+    given-names: Po-Wei
+  - family-names: Zhang
+    given-names: Zewei
+  - family-names: He
+    given-names: Peixiong
+  - family-names: Qin
+    given-names: Xiao
+repository-code: "https://github.com/libophd/code-regularize-or-localize"
+url: "https://openreview.net/forum?id=vPYlyHPomp"
+license: MIT
