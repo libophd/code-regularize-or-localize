@@ -39,6 +39,5 @@ testpaths = ["tests"]
 [tool.ruff.lint.per-file-ignores]
 "scripts/**" = ["E402"]
 "scripts/kv_quant_eval.py" = ["E402", "F401"]
-"scripts/phase1_5_gate.py" = ["E402", "F841"]
 "scripts/revision/tier2_common.py" = ["E402", "F401"]
 
